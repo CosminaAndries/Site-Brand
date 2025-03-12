@@ -1,17 +1,22 @@
 <html>
 <head>
-<title>Adresa de gmail si parola utilizatorului </TITLE>
+<title>Authentification Page </title>
+<link rel="stylesheet" type="text/css" href="stiluri.css">
 </head>
 <body>
-<h3>Introduceti datele pentru autentificare cont/Log in</h3>
-<FORM METHOD=POST ACTION=autentificare.php>
-<p>Adresa de email</p><br>
-<INPUT TYPE="TEXT" SIZE=15 MINLENGHT =3 MAXLENGTH=50 NAME=email></BR>
-<p>Parola</p><br>
-<INPUT TYPE="PASSWORD"SIZE=15 MINLENGH=8 MAXLENGTH=60 NAME=parola>
-</br>
-<INPUT TYPE=SUBMIT VALUE=TRIMITE>
-<INPUT TYPE=RESET>
-</FORM>
+<form action="autentificare.php" method="POST">
+<h1>Authentification Page</h1>
+<h3>Fill the blankets with personal information in order to log in</h3>
+<div class="container">
+<label for="email">Email:</label>
+<input type="TEXT" size =15 minlength=10 maxlength=80 name="email_box">
+
+
+<label for="password">Password:</label>
+<INPUT TYPE="PASSWORD" size=15 minlength=8 maxlength=60 name="email_box">
+<div class="container_butoane">
+<button type="submit">SEND</button> <button type="reset">RESET</button>
+</div>
+</form>
 </body>
 </html>

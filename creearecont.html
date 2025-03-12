@@ -1,28 +1,37 @@
 <html>
-<HEAD> 
-<TITLE> CREEARE CONT </TITLE> 
-<link rel="stylesheet" type="text/css" src="stiluri.css">
-</HEAD>
-<FORM METHOD="GET" ACTION="creearecont.php">
-<BODY>
-<FORM METHOD="POST" ACTION="creearecont.php">	
-<h3>Introduceti datele</h3>
-<label for="nume">Nume:</label>
-<Br>
-<input type="TEXT" size =15 minlenght=1 maxlenght=20 name="nume">
-<BR>
-Prenume:<BR>
-<INPUT TYPE="TEXT" SIZE=15 MINLENGHT=1 MAXLENGTH=20 NAME="prenume">
-<BR>
-Telefon:<BR>
-<INPUT TYPE="TEXT" SIZE=15 MINLENGHT=10 MAXLENGTH=15 NAME="telefon">
-<br>
-Email:<BR>
-<INPUT TYPE="TEXT" SIZE=15 MINLENGHT=3 MAXLENGTH=25 NAME="email">
-<BR>
-Parola:<BR>
-<INPUT TYPE="PASSWORD" SIZE=15 MINLEGHT=8 MAXLENGTH=60 NAME="parola">
-<INPUT TYPE="SUBMIT" VALUE="OK"> <INPUT TYPE="RESET">
-</FORM>
-</BODY>
-</HTML>
+<head> 
+<title> Creeare Cont </title > 
+<link rel="stylesheet" type="text/css" href="stiluri.css">
+
+</head>
+
+<body>
+ <form action="creearecont.php" method="POST">
+<h1>Welcome to Create New Account</h1>
+<h3>Fill the blankets with personal information right down below</h3>
+<div class="container">
+
+<label for="first_name">First Name:</label>
+<input type="TEXT" size =15 minlength=3 maxlength=15 name="first_name_box"id="first_name">
+
+<label for="last_name">Last Name:</label>
+<input type ="TEXT" SIZE=15 minlength=3 maxlength=20 NAME="last_name_box" id="last_name">
+
+<label for="phone_number">Phone Number:</label>
+<input type="TEXT" SIZE=15 minlength=10 maxlength=15 NAME="phoneNumberBox" id="phone_number">
+
+<label for="email">Email:</label>
+<input type="TEXT" SIZE=15 minlength=10 maxlength=60 NAME="EmailBox" id="email">
+
+<label for="password">Password:</label>
+<input type="PASSWORD" SIZE=15 minlength=8 maxlength=60 NAME="PasswordBox" id="password">
+
+<div class="container_butoane">
+<button type="submit">SEND</button> <button type="reset">RESET</button>
+ </form>
+</div>
+
+
+</div>
+</body>
+</html>

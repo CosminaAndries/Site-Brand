@@ -1,5 +1,11 @@
-<html>
-<head>
+body{
+	
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
 .title
 {color:gold;
 font-size:20px;
@@ -14,11 +20,44 @@ font-size:14px;
 	color:black;
 font-size:14px;
 font-family:Times New Roman;}
-</head>
-<body>
-<background-color:"babyblue">
-<div class ="title">Culture lives through controversity-Vivienne Westwood</div class>
-<div class ="paragraphs"></div class>
-<div class ="description"></div class>
-</body>
-</html>
+
+.container_pozele_de_panou{
+	display:flex;
+flex-direction:row;
+align-items:center;
+justify-content:center;
+}
+
+.container{
+display: flex;
+    justify-content: space-between; /* Un element la stânga, unul la dreapta */
+    align-items: center; /* Aliniere pe verticală */
+    width: 100%;
+  
+}
+.sectiuni{
+	display: flex;
+	flex-direction:column;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+}
+.image-button {
+    display: inline-block;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden; 
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.image-button img {
+    width: 500px;
+    height: 250px;
+    display: block;
+    border-radius: 8px; /* Se aplică și imaginii */
+}
+
+.image-button:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); 
+}

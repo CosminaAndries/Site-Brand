@@ -1,0 +1,49 @@
+ h3{
+	 text-align:center;
+	 font-size:50;
+ }
+ .container:hover img {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adaugă umbră */
+}
+ 
+ table {
+	        
+            width: 80%;
+            border-spacing: 10px;
+            margin: 20px auto;
+        }
+        td { border: transparence; 
+            padding: 15px;
+            text-align: center;
+    
+        }
+        img {
+            width: 200px; /* Ajustează dimensiunea */
+            height: 200px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1); /* Mărește imaginea la hover */
+        }
+		tr{
+			 border: transparence;
+		}
+.home-button{
+    position: fixed;  /* Fixează butonul pe ecran */
+    top: 20px;       /* Poziționează în partea de sus */
+    left: 20px;      /* Poziționează în partea stângă */
+    font-size: 20px; /* Mărește săgeata */
+    color: white;    /* Culoarea săgeții */
+    background: black; /* Fundal negru pentru contrast */
+    padding: 10px 15px;
+    border-radius: 50%; /* Face butonul rotund */
+    text-decoration: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Efect de umbră */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.home-button:hover {
+    background: gray;
+    transform: scale(1.1);
+}

@@ -2,49 +2,65 @@
 <head>
 <script type="text/javascript" src="alarm.js">
 </script>
+<link rel="stylesheet" type="text/css"  href="paginihaine.css">
 </head>
-<body onbeforeunload="return myFunction()">
-<a href="file:///C:/xampp/proiect%20site/homepage.html">Click here to go to Homepage</a> 
-<script>
-function myFunction() {
-  return "Welcome Back";
-}
-</script>
+<a href="file:///C:/Personal/desktop/testwebsite/proiect%20site/homepage.html" class="home-button">
+    &#8592; <!-- Cod Unicode pentru săgeată stânga -->
+</a>
+<a href="file:///C:/Personal/desktop/testwebsite/proiect%20site/creearecont.html" class="alta_pagina_button">
+   &#8594; <!-- Cod Unicode pentru săgeată stânga -->
+</a>
 <h3 align="center">"Horseshoe waistcoat"</h3></align="center">
-<img src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw49dc055f/images/2C010062-C0032-SI_MIX_1_large.jpg?sw=570&sh=758&sm=fit&q=80" align="center"></align="center">
-<img src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf59aa661/images/2C010062-C0032-SI_MIX_2_large.jpg?sw=570&sh=758&sm=fit&q=80" align="right"></align="right">
-<h3><align="center">Price:€700</h3></align="center">
-<h3><align="center">Colour:MIX </align="center">/h3>
-<h3>Available sizes:</h3>
-<align ="center"><input type="radio" id="44" name="Size:Please select value" value="44"></align ="center">
-<align ="center"><label for="44">44</label></align ="right">
-<align ="center"><input type="radio" id="46" name="Size:Please select value" value="46"></align ="center">
-<align ="center"><label for="46">46</label></align ="right">
-<align ="center"><input type="radio" id="48" name="Size:Please select value" value="48"></align ="center">
-<align ="center"><label for="48">48</label50></align ="right">
-<align ="center"><input type="radio" id="L" name="Size:Please select value" value="50"color="grey"></align ="center"></color="grey">
-<align ="center"><label for="50">50</label></align ="right">
-<align ="center"><input type="radio" id="52" name="Size:Please select value" value="52"color="grey"></align ="center"></color="grey">
-<align ="center"><label for="52">52</label></align ="center">
-</form>
+<div class="main-container">
+
+
+    <!-- Partea de sus cu imaginea și textul -->
+    <section class="top-section">
+        <img src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dw49dc055f/images/2C010062-C0032-SI_MIX_1_large.jpg?sw=570&sh=758&sm=fit&q=80"></align="center">
+        <div class="text">
+		 <h3>Price: €700</h3>
+            <h3>Colour: MIX</h3>
+            <h3>Available sizes: </h3>
+            <form>
+                <input type="radio" id="44" name="Size" value="44">
+                <label for="44">44</label>
+                <input type="radio" id="46" name="Size" value="46">
+                <label for="46">46</label>
+                <input type="radio" id="48" name="Size" value="48">
+                <label for="48">48</label>
+                <input type="radio" id="52" name="Size" value="52">
+                <label for="52">52</label>
+            </form>  
+        </div>
+    </section>
+
+    <!-- Partea de jos cu imaginea și textul -->
+    <section class="bottom-section">
+        <img src="https://www.viviennewestwood.com/dw/image/v2/BJGV_PRD/on/demandware.static/-/Sites-viviennewestwood-master-catalog/default/dwf59aa661/images/2C010062-C0032-SI_MIX_2_large.jpg?sw=570&sh=758&sm=fit&q=80" class="img" alt="Denim Boxer Jacket 2">
+        <div class="text">
 <h3><align="center">Description</align="center"></h3>
 <p><align="center">Reminiscent of classic English tailoring, the tartan Horseshoe waistcoat blends viscose and wool and features an organic cotton Tattersall check jacquard piquet at the back.</p></align="right">
--MacAndy tartan</br>
-<br>-Sleeveless silhouette</br>
-<br>-Slim-fit design</br>
-<br>-Collarless</br>
-<br>-Two front jet pockets</br>
-<br>-Front buttoned closure</br>
-<br>-Tartan front panel</br>
-<br>-Made in Italy</br>
-<br>-Tonal stitching</br>
-<br>-Cotton interior lining</br>
+<ul>
+<li>MacAndy tartan</li>
+<li>Sleeveless silhouetten</li>
+<li>Slim-fit designn</li>
+<li>Collarlessn</li>
+<li>Two front jet pocketsn</li>
+<li>Front buttoned closuren</li>
+<li>Tartan front panel</li>
+<li>Made in Italyn</li>
+<li>Tonal stitchingn</li>
+<li>Cotton interior liningn</li>
+</ul>
 <p><align="center">Code: 2C010062-C0032-SI-MIX</p></align="center">
 <h3><align="center">Composition</align="center"></h3>
-<p><align="center">85% Viscose
-13% Mulesing-free wool
-2% Elastane</align="center"></p>
+<p>85% Viscose</p>
+<p>13% Mulesing-free wool</p>
+<p>2% Elastane</p>
 <h3 ><align="center">Care Instructions</h3 ></align="center">
 <p align="left">Please handle the garment with care and carefully follow the washing instructions.</p align="left">
+</div>
+</section>
+
 </body>
 </html>

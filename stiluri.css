@@ -1,32 +1,108 @@
-<html>
-<head>
-.body
-{background-color:grey;
-width: 320px;
- height: 400px;
- padding: 10px;
- border: 15px orange;
- margin: 0;
+body {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    margin: 0;
+	background-image:url('download.jpg'); 
+    background-position: left center; 
+    background-repeat: no-repeat; 
+	 
+	
+   
 }
-</head>
-<body>
-<div class="body">
-<h3>Introduceti datele:</h3>
-Nume:<BR>
-<INPUT TYPE=TEXT SIZE=15 MINLEGHT="1"MAXLENGTH=20 NAME="nume">
-<BR>
-Prenume:<BR>
-<INPUT TYPE=TEXT SIZE=15 MINLEGHT=1 MAXLENGTH=20 NAME="prenume">
-<BR>
-Telefon:<BR>
-<INPUT TYPE="TEXT" SIZE=15 MINLENGHT="10"MAXLENGTH=15 NAME="telefon">
-<br>
-Email:<BR>
-<INPUT TYPE="TEXT" SIZE=15 MINLENGHT="3"MAXLENGTH="25"NAME="email">
-<BR>
-Parola:<BR>
-<INPUT TYPE="TEXT" SIZE=15 MINLEGHT=8 MAXLENGTH="60"NAME="parola">
-<INPUT TYPE="SUBMIT" VALUE="OK"> <INPUT TYPE="RESET">
-</div class>
-</body>
-</html>
+
+h1 {
+    color: black;
+	margin-top:20px;
+	 position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%; 
+    right: 15px; 
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+   background-color: black !important;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #black;
+}
+label[for="email"] {
+    color: #black;
+    font-weight: bold;
+}
+label[for="last_name"] {
+    color:black;
+    font-weight: bold;
+}
+label[for="phone_number"] {
+    color: black;
+    font-weight: bold;
+}
+label[for="first_name"] {
+    color:black;
+    font-weight: bold;
+}
+label[for="password"] {
+    color: black;
+    font-weight: bold;
+}
+container_butoane{
+	  display:black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	
+	
+}
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: white;
+    background: black;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.home-button:hover, {
+    background: gray;
+transform: scale(1.1);
+}

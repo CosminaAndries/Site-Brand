@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" a href="paginihaine.css">
+<script href="page.js"></script>
+    </head>
+<style>
+@font-face {
+    font-family:'Malvides';
+    src: url('malvides/Malvides.otf')format('opentype');
+}
+</style>
+<body>
+    <h2 style="text-align:center;font-family:'Malvides';font-size:48px">Customer Payments</h2>
+
+<form style="height:500px;width:600px;position:relative;top:5vh;  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;left:10vw;" >
+<h1 style="text-align:center;position:relative;top:3vh;">
+    Confirm Your Payment
+</h1>
+<div class="formPaymentFields">
+<div class="nameAndVerificationValue">
+    <div class="fullNameField">
+<label style="font-weight:bold;" for="fullNameField">
+Owner
+</label>
+<input type="text" id="fullNameField"/>
+</div>
+<div class="CVV">
+<label style="font-weight:bold;"  for="cardVerificationValue">
+CVV
+</label>
+<input type="text" id="cardVerificationValue"/>
+
+</div>
+</div>
+<div id="cardNumberField" >
+<label style="font-weight:bold;" for="fullNameField">
+Card Number
+</label>
+<input type="text" id="CardNumber"/>
+</div>
+<div class="paymentAndExpirationDate">
+<div style="display:flex; flex-direction:column;gap:2vh;">
+<label style="font-weight:bold;text-align:left;">Expiration Date</label>
+<div style="display:flex;flex-direction:row;gap:0.5vw;" >
+<select id="months">
+    <option>Jan
+    </option>
+     <option>Feb
+    </option>
+     <option>Mar
+    </option>
+     <option>Apr
+    </option>
+     <option>May
+    </option>
+     <option>Jun
+    </option>
+     <option>Jul
+    </option>
+     <option>Aug
+    </option>
+     <option>Sep
+    </option>
+     <option>Oct
+    </option>
+     <option>Nov
+    </option>
+     <option>Dec
+    </option>
+</select>
+
+<select id="years">
+    <option>2025
+    </option>
+     <option>2026
+    </option>
+     <option>2027
+    </option>
+     <option>2028
+    </option>
+     <option>2029
+    </option>
+     <option>2030
+    </option>
+ 
+</select>
+</div>
+</div>
+<div class="option_payment">
+    <button id="visaCard" title="Visa Card"></button>
+    <button id="masterCard"title="Master Card"></button>
+    <button id="paypal" title="Paypal"></button>
+</div>
+
+</div>
+<button id="confirm" style="width:250px;margin:auto;height:45px;"> CONFIRM</button>
+</form>
+
+
+
+</body>
+</html>

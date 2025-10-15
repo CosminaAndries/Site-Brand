@@ -1,3 +1,4 @@
+
 body {
     
     display: flex;
@@ -33,7 +34,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #white;
+    background-color: white;
     padding: 20px;
     width: 400px;
     border-radius: 10px;
@@ -59,10 +60,10 @@ button {
 }
 
 button:hover {
-    background-color: #black;
+    background-color: black;
 }
 label[for="email"] {
-    color: #black;
+    color: black;
     font-weight: bold;
 }
 label[for="last_name"] {
@@ -102,7 +103,152 @@ container_butoane{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     transition: background 0.3s ease, transform 0.2s ease;
 }
-.home-button:hover, {
+.home-button:hover{
+    background-color: grey;
+transform: scale(1.1);
+}
+
+body {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    margin: 0;
+	background-image:url('download.jpg'); 
+    background-position: left center; 
+    background-repeat: no-repeat; 
+	 background-color:
+#fbfbfb;
+   
+}
+
+h1 {
+    color: black;
+	margin-top:20px;
+	 position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    right: 15px; 
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    height:500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.container input{
+    display:block;
+
+}
+.container label{
+     display:block;
+     text-align:left;
+}
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+   background-color: black !important;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: black;
+}
+label[for="email"] {
+    color: #333;
+    font-weight: bolder;
+  
+
+}
+label[for="last_name"] {
+         color: #333;
+           font-weight: bolder;
+}
+label[for="phone_number"] {
+       color: #333;
+         font-weight: bolder;
+}
+label[for="first_name"] {
+    color: #333;
+      font-weight: bolder;
+}
+label[for="password"] {
+       color: #333;
+         font-weight: bolder;
+}
+.container_butoane{
+	  display:black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: white;
+    background: black;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.home-button:hover {
     background: gray;
 transform: scale(1.1);
 }
+#authenticateButton:hover{
+    background-color:white !important;
+    color:black;
+    border:0.2px solid black;
+
+}
+#resetButton:hover{
+    background-color:white !important;
+    color:black;
+    border:0.2px solid black;
+
+}
+#createButton:hover{ 
+    background-color:white !important;
+    color:black;
+    border:0.2px solid black;
+
+    
+}
+
+ .newslatter{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:1em;
+ }
+

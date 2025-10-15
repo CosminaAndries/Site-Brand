@@ -1,43 +1,65 @@
+
 <html>
 <head> 
-<title> Creeare Cont </title > 
+<title> Create Account Page </title > 
+<script src="intlTelInput.js"></script>
 <link rel="stylesheet" type="text/css" href="stiluri.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="intlTelInput.css" rel="stylesheet">
+<script src="intlTelInput.min.js"></script>
+<script src="page.js"></script>
 </head>
-<a href="file:///C:/Personal/desktop/testwebsite/proiect%20site/homepage.html" class="home-button">
-    &#8592; <!-- Cod Unicode pentru săgeată stânga -->
+<a href="homepage.html" class="home-button">
+    &#8592; 
 </a>
-
 
 <body>
  <form action="creearecont.php" method="POST">
-<h1>Welcome to Create New Account</h1>
+<h1 style="font-family:Permanent Marker">Create New Account</h1>
 
 <div class="container">
-
-
-<label for="first_name">First Name:</label>
-<input type="TEXT" size =15 minlength=3 maxlength=15 name="first_name_box"id="first_name">
-
-<label for="last_name">Last Name:</label>
-<input type ="TEXT" SIZE=15 minlength=3 maxlength=20 NAME="last_name_box" id="last_name">
-
-<label for="phone_number">Phone Number:</label>
-<input type="TEXT" SIZE=15 minlength=10 maxlength=15 NAME="phoneNumberBox" id="phone_number">
-
-<label for="email">Email:</label>
-<input type="TEXT" SIZE=15 minlength=10 maxlength=60 NAME="EmailBox" id="email">
-
-<label for="password">Password:</label>
-<input type="PASSWORD" SIZE=15 minlength=8 maxlength=60 NAME="PasswordBox" id="password">
-
-<div class="container_butoane">
-<button type="submit">SIGN IN</button> <button type="reset">RESET</button>
-<a href="file:///C:/Personal/desktop/testwebsite/proiect%20site/autentificarecont.html"><p>Already have an account?</p></a>
- </form>
+    <div class="fields">
+<label for="first_name" style="text-align: left;border-color: black;"">FIRST NAME</label>
+<input type="text"  style="border-color: black;" ssize ="15" minlength="3" maxlength="20" name="first_name_box" placeholder="Enter your first name" id="first_name" required>
 </div>
+    <div class="fields">
+<label style="text-align: left;"for="last_name">LAST NAME</label>
+<input type ="text" style="border-color: black;" size="15" minlength="3" maxlength="15" name="last_name_box" placeholder="Enter your last name" id="last_name" required>
+</div>
+<div class="fields">
+<label style="text-align: left;border-color: black;"for="phone_number">PHONE NUMBER</label>
+<input type="tel" id="phone_number" required>
+</div>
+<script>
+   const phone_flags=document.querySelector("#phone_number");
+window.intlTelInput(phone_flags, {
+    initialCountry:"us"
+});
+</script>
+<div class="fields">
+<label style="text-align: left;" for="email">GMAIL</label>
+<input type="email"style="border-color: black;" s size="15" minlength="10" maxlength="60" name="email_box" id="email" placeholder="username@gmail.com" required>
+</div>
+<div class="fields">
+<label style="float: left;"for="password">PASSWORD</label>
+<input type="password" style="border-color: black;" ssize="15" minlength="8" maxlength="60" name="password_box" placeholder="Create a password" id="password" required>
+</div>
+<div class="newslatter">
+<label>
+    Do you want to subscribe to the newslatter?
+    </label>
+<input type="checkbox">
+</div>
+<div class="container_butoane">
+<button id="createButton" type="submit" value="SIGN UP">SIGN UP</button> <button id="resetButton" type="reset">RESET</button>
 
-
+<a href="autentificarecont.html"><p>Already have an account?</p></a>
+ 
+</div>
+</form>
 </div>
 </body>
 </html>
+>>>>>>> f35b2ff (update)

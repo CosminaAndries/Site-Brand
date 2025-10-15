@@ -1,22 +1,30 @@
+
 <html>
 <head>
 <title>Authentification Page </title>
 <link rel="stylesheet" type="text/css" href="stiluri.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
-<form action="autentificare.php" method="POST">
-<h1>Authentification Page</h1>
+<a href="creearecont.html" class="home-button">
+    &#8592; 
+</a>
+<form action="autentificarecont.php" method="POST">
+<h1 style="font-family:Permanent Marker">Authentification Page</h1>
 
 <div class="container">
-<label for="email">Email:</label>
-<input type="TEXT" size =15 minlength=10 maxlength=80 name="email_box">
+<label style="font-family:Permanent Marker" for="email">Email:</label>
+<input type="email" size ="15" minlength="10" maxlength="80" name="email_box" required>
+<label style="font-family:Permanent Marker" for="password">Password:</label>
+<input type="password" size="15" minlength="8" maxlength="60" name="password_box"  required>
 
-
-<label for="password">Password:</label>
-<INPUT TYPE="PASSWORD" size=15 minlength=8 maxlength=60 name="email_box">
 <div class="container_butoane">
-<button type="submit">LOG IN</button> <button type="reset">RESET</button>
+<button id="authenticateButton" type="submit">LOG IN</button>''
+ <button id="resetButton" type="reset">RESET</button>
 </div>
 </form>
 </body>
 </html>
+>>>>>>> f35b2ff (update)

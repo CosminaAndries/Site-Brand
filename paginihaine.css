@@ -1,113 +1,4 @@
-<<<<<<< HEAD
-.main-container {
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto; /* Mărește distanța față de marginea paginii */
-    max-width: 1200px; /* Lățimea maximă a containerului */
-    gap: 40px; /* Spațiu între secțiuni */
-}
 
-/* Top section */
-.top-section {
-    display: flex;
-    justify-content: space-between; /* Aliniază imaginea și textul pe orizontală */
-    align-items: center; /* Aliniază vertical */
-    gap: 20px; /* Distanta între imagine și text */
-}
-
-/* Bottom section */
-.bottom-section {
-    display: flex;
-    justify-content: space-between; /* Aliniază imaginea și textul pe orizontală */
-    align-items: center; /* Aliniază vertical */
-    gap: 20px; /* Distanta între imagine și text */
-}
-
-/* Stilizare pentru imagini */
-.img {
-    width: 45%; /* Ajustează lățimea imaginii */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-/* Stiluri pentru text */
-.text {
-    width: 50%; /* Ajustează lățimea textului */
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Stilizare pentru titluri */
-h3 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-form{
-	  text-align: center;
-    margin-bottom: 20px;
-}
-
-.bottom-section .text {
-    order: 2; /* Textul va fi la dreapta, adică la final */
-}
-
-.bottom-section .img {
-    order: 1; /* Imaginea va fi la stânga, adică la început */
-}
-/* Marginile secțiunilor */
-section {
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Adăugăm stiluri pentru butoane (opțional) */
-.home-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    font-size: 20px;
-    color: white;
-    background: black;
-    padding: 10px 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-.alta_pagina_button{
-	
-	    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 20px;
-    color: white;
-    background: black;
-    padding: 10px 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    transition: background 0.3s ease, transform 0.2s ease;
-
-	
-}
-
-/* Efectul hover pe butoane */
-.home-button:hover, .alta_pagina_button:hover {
-    background: gray;
-    transform: scale(1.1);
-}
-@media (min-width: 768px) {
-    .bottom-section .text {
-        order: 1;
-    }
-
-    .bottom-section .img {
-        order: 2;
-    }
-}
-=======
 .main-container {
     display: flex;
     flex-direction: column;
@@ -307,14 +198,7 @@ section {
     width:36px;
     height:36px;
 }
-#bag_button{
-    background-image: url('shopping-bag.png'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    border:none;
-    cursor:pointer;
-   background-color: transparent;
-}
+
 #user_button{
      background-image: url('user.png'); 
     background-repeat: no-repeat;
@@ -466,4 +350,3 @@ cursor:pointer;
     align-items: end;
     gap: 8.5vw;
 }
->>>>>>> f35b2ff (update)

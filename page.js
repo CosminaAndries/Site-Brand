@@ -19,20 +19,21 @@ heartButton.addEventListener('click', function() {
          alert("Your item has been removed from the wishlist!")
 
     }
-
 })
-
 });
 let bagButtons=document.querySelectorAll(".addBagButton");
-let  bagButtonAndBadgeContainer=document.querySelectorAll(".bagButtonAndBadge");
-let numberOfproducts=null;
+
+let numberOfproducts=0;
 
 bagButtons.forEach((bagButton)=>{
    bagButton.addEventListener('click',function(){
     let badge=document.createElement('span');
+ 
     badge.classList.add('badge');
+ let  bagButtonAndBadgeContainer=document.querySelector(".bagButtonAndBadge");
     bagButtonAndBadgeContainer.appendChild(badge);
-numberOfproducts.textContent=numberOfproducts+1;
+    numberOfproducts++;
+     badge.textContent=numberOfproducts;
     })
 
 })
@@ -43,16 +44,17 @@ searchBar.addEventListener("input",function(e){
  input =e.target.value;
 })
 
-*/
+
 let cvv=document.getElementById('cardVerificationValue');
 cvv.addEventListener('input',function(){
 let cvv_content=cvv.value;
 const pattern=/\d\d\d/;
-if(!pattern.test( cvv_content)){
+if(!pattern.test(cvv_content)){
  cvv_content= cvv_content.replace(/\D/g,"");
  cvv.value=cvv_content;
  console.log(cvv.value);
 }
 })
-})
+*/
+});
 

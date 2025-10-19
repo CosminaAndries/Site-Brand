@@ -2,6 +2,7 @@
     font-family:'Malvides';
     src: url('malvides/Malvides.otf')format('opentype');
 }
+
 #homepage_title{
 font-family:'Malvides';
 font-size:48px;
@@ -22,28 +23,49 @@ justify-content:center;
     align-items:center;
     justify-content: space-evenly;
     gap:3px;
-    left:80%;
-}
-#heart_button{
-    background-image: url('heart24.png'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    border:none;
-    cursor:pointer;
-   background-color: transparent;
+  
 }
 .button_nav{
     width:36px;
     height:36px;
 }
-#bag_button{
-    background-image: url('shopping-bag.png'); 
+#user_button{
+     background-image: url('user.png'); 
     background-repeat: no-repeat;
     background-position: center;
     border:none;
     cursor:pointer;
    background-color: transparent;
 }
+
+#searchButton{
+    background:url('icons8-magnifier-24.png');
+    background-repeat:no-repeat;
+    height:45%;
+    margin-top:10%;
+    width:30px;
+    border:none;
+    cursor:pointer;
+
+}
+
+.button_nav_{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-evenly;
+    gap:5%;
+    left:80%;
+}
+.navSearchBarButton{
+    height:70%;
+    display:flex;
+    flex-direction: row;
+    border-bottom: 0.5px solid #333;
+    margin-bottom:0%;
+}
+
 #user_button{
      background-image: url('user.png'); 
     background-repeat: no-repeat;
@@ -63,6 +85,7 @@ justify-content:center;
     position:sticky;
     top:0;
     z-index:1;
+    
 }
 
 .paragraphs{

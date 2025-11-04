@@ -15,11 +15,14 @@
 <h1 style="font-family:Permanent Marker">Authentification Page</h1>
 
 <div class="containerAutentificare">
-<label style="font-family:Permanent Marker" for="email">Email:</label>
-<input type="email" size ="15" minlength="10" maxlength="80" name="email_box" required>
-<label style="font-family:Permanent Marker" for="password">Password:</label>
-<input type="password" size="15" minlength="8" maxlength="60" name="password_box"  required>
-
+<div class="fields">
+<label  for="email" style="font-weight: bold;text-align:center";>EMAIL:</label>
+<input type="email" size ="15" minlength="10" maxlength="80" name="email_box"  placeholder="user@gmail.com"required>
+</div>
+<div class="fields">
+<label  for="password">PASSWORD:</label>
+<input type="password" size="15" minlength="8" maxlength="60" name="password_box" placeholder="Enter the password..." required>
+</div>
 <div class="container_butoane">
 <button id="authenticateButton" type="submit">LOG IN</button>
  <button id="resetButton" type="reset">RESET</button>

@@ -13,8 +13,22 @@ body{
 display:flex;
 flex-direction:column;
 align-items:center;
-justify-content:center;
+
    overflow-x:hidden;
+}
+.navbar{
+    margin:0px;
+    margin-left:0px;
+    height:10vh;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 1.0),  rgba(255, 255, 255, 0.5)   );
+    position:sticky;
+    top:0;
+    z-index:1;
+    justify-content: space-around;
+    overflow-y:hidden;
 }
 .button_nav_{
     position:relative;
@@ -23,21 +37,17 @@ justify-content:center;
     align-items:center;
     justify-content: space-evenly;
     gap:3px;
+
   
 }
-.button_nav{
-    width:36px;
-    height:36px;
-}
-#user_button{
-     background-image: url('user.png'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    border:none;
-    cursor:pointer;
-   background-color: transparent;
-}
 
+#wishListProducts{
+    display:grid;
+    grid-template-columns:(5,1fr);
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:5%;
+}
 #searchButton{
     background:url('icons8-magnifier-24.png');
     background-repeat:no-repeat;
@@ -49,14 +59,12 @@ justify-content:center;
 
 }
 
-.button_nav_{
-    position:relative;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content: space-evenly;
-    gap:5%;
-    left:80%;
+#heart_button{ 
+    background-repeat: no-repeat;
+    background-position: center;
+    border:none;
+    cursor:pointer;
+   background-color: transparent;
 }
 .navSearchBarButton{
     height:70%;
@@ -65,28 +73,31 @@ justify-content:center;
     border-bottom: 0.5px solid #333;
     margin-bottom:0%;
 }
+input:focus{
+    outline:none;
+}
+input:active{
+    outline:none;
+}
+.badge{
+    position:absolute;
+    bottom: 14px;
+    padding:3px;
+    left:1em;
+    border-radius: 48%;
+    background-color: red;
+    color:white;
 
-#user_button{
-     background-image: url('user.png'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    border:none;
+}
+.addBagButton:hover{
+    transform:scale(0.8);
+
+}
+.addBagButton{
     cursor:pointer;
-   background-color: transparent;
 }
 
-.navbar{
-    margin:0px;
-    height:10vh;
-    width:100%;
-    display:flex;
-    flex-direction:row;
-    background:linear-gradient(to bottom, rgba(255, 255, 255, 1.0),  rgba(255, 255, 255, 0.5)   );
-    position:sticky;
-    top:0;
-    z-index:1;
-    
-}
+
 
 .paragraphs{
 color:black;
@@ -185,8 +196,69 @@ display: flex;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.05); 
 }
-#wishListProducts{
-    display:grid;
-    grid-template-columns: (3,1fr);
-      gap: 20px;
+
+.option_search_container{
+        position:absolute;
+    display:flex;
+    flex-direction:column;
+    top:9%;
+    left:12%;
+    z-index:1;
+  border-radius:10px;
+    height:150px;
+}
+.option_search  {
+     display: inline-block; 
+    padding:15px;
+    text-decoration: none;
+    background:transparent;
+    color:black;
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.option_search:hover{
+    background-color:grey;
+    transform:ease 0.3s;
+    color:white;
+    transition:background-color 1.5s ease;
+}
+.searchBar{
+    display:flex;
+    flex-direction: column;
+}
+.option_search a{
+    display:none;
+}
+.option_none{
+    display:none;
+}
+home-button:hover, .alta_pagina_button:hover {
+    background: gray;
+    transform: scale(1.1);
+}
+
+    .bottom-section .text {
+        order: 1;
+    }
+
+    .bottom-section .img {
+        order: 2;
+    
+}
+.heartButton{
+    background: url('icons8-heart-24.png');
+    background-repeat: no-repeat;
+}
+#user_button{
+     background-image: url('user.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    border:none;
+    cursor:pointer;
+   background-color: transparent;
+}
+.button_nav{
+    width:36px;
+    height:36px;
 }

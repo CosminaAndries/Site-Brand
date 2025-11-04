@@ -2,15 +2,13 @@
 <html>
 <head> 
 <title> Create Account Page </title > 
-<script src="intlTelInput.js"></script>
+<script src="create.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="stiluri.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-<link href="intlTelInput.css" rel="stylesheet">
-<script src="intlTelInput.min.js"></script>
-<script src="page.js"></script>
+ <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </head>
 <a href="homepage.html" class="home-button">
     &#8592; 
@@ -21,32 +19,46 @@
 <h1 style="font-family:Permanent Marker">Create New Account</h1>
 
 <div class="container">
+
     <div class="fields">
-<label for="first_name" style="text-align: left;border-color: black;"">FIRST NAME</label>
-<input type="text"  style="border-color: black;" size ="15" minlength="3" maxlength="20" name="first_name_box" placeholder="Enter your first name" id="first_name" required>
+<label for="first_name" style="text-align:center;border-color: black;"">FIRST NAME:</label>
+<input type="text"  required style="border-color: black;" size ="15" minlength="3" maxlength="20" name="first_name_box" placeholder="Enter your first name" id="first_name" required>
 </div>
     <div class="fields">
-<label style="text-align: left;"for="last_name">LAST NAME</label>
-<input type ="text" style="border-color: black;" size="15" minlength="3" maxlength="15" name="last_name_box" placeholder="Enter your last name" id="last_name" required>
+<label style="text-align:center;"for="last_name">LAST NAME:</label>
+<input type ="text"  required style="border-color: black;" size="15" minlength="3" maxlength="15" name="last_name_box" placeholder="Enter your last name" id="last_name" required>
 </div>
 <div class="fields">
-<label style="text-align: left;border-color: black;"for="phone_number">PHONE NUMBER</label>
-<input type="tel" id="phone_number" required>
-</div>
-<script>
-   const phone_flags=document.querySelector("#phone_number");
-window.intlTelInput(phone_flags, {
-    initialCountry:"us"
-});
-</script>
-<div class="fields">
-<label style="text-align: left;" for="email">GMAIL</label>
-<input type="email"style="border-color: black;" s size="15" minlength="10" maxlength="60" name="email_box" id="email" placeholder="username@gmail.com" required>
+<label style="text-align:center;" for="gmail">GMAIL:</label>
+<input type="gmail" required style="border-color: black;"  size="15" minlength="10" maxlength="60" name="email_box" id="email" placeholder="username@gmail.com" required>
 </div>
 <div class="fields">
-<label style="float: left;"for="password">PASSWORD</label>
-<input type="password" style="border-color: black;" ssize="15" minlength="8" maxlength="60" name="password_box" placeholder="Create a password" id="password" required>
+<label style="text-align:center;"for="password">PASSWORD:</label>
+<input type="password" style="border-color: black;" required size="15" minlength="8" maxlength="60" name="password_box" placeholder="Create a password" id="password" required>
 </div>
+
+<div class="fields">
+<label style="text-align:center;"for="phone">PHONE:</label>
+<div class="select-box">
+    <div class="selected-option">
+        <div class="icon" >
+          <span class="iconify" data-icon="flag:us-4x3"></span>
+        <strong>+44</strong>
+        </div>
+          <input type="tel" class="phone-box" required placeholder="Phone number"/>
+          </div>
+ 
+
+<div class="options">
+     <input type="text" class="search-box" placeholder="Search Country Name"/>
+     <ol>
+     </ol>
+</div>
+
+
+    </div>
+</div>
+
 <div class="newslatter">
 <label>
     Do you want to subscribe to the newslatter?
@@ -61,6 +73,9 @@ window.intlTelInput(phone_flags, {
 </div>
 </form>
 </div>
+
+</div>
+</form>
 </body>
 </html>
 

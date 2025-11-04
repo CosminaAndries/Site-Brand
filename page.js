@@ -2,6 +2,40 @@ document.addEventListener('DOMContentLoaded',function(){
    let badgeHeart=document.createElement('span');
 let heartButtons=document.querySelectorAll('.heartButton');
 let heartDiv=document.querySelectorAll(".wishlistButton");
+let searchBar=document.getElementById('search_bar');
+
+
+
+
+ searchBar.addEventListener('keyup',function(){
+  let input=searchBar.value;
+  input=input.toLowerCase();
+let options=document.querySelectorAll('.option_search_container a');
+
+
+for (let i =0;i<options.length;i++){
+if (options[i].textContent.toLowerCase().includes(input)){
+   options[i].classList.remove('option_none');
+   options[i].classList.add('option_search');
+    console.log(options.classList);
+
+   if(input.length===0){
+   options[i].classList.remove('option_search');
+
+  options[i].classList.add('option_none');
+  console.log(options.classList);
+}
+}
+else{
+options[i].classList.remove('option_search');
+  options[i].classList.add('option_none');
+  console.log(options.classList);
+  
+}
+
+}
+ });
+ 
 let numberOfWishListItems=0;
 heartButtons.forEach((heartButton)=>{
 heartButton.addEventListener('click', function() {
@@ -297,8 +331,14 @@ if (bagButton.id==="add_bag_fifthP_men"){
    }
 }
  })
-    })
  
+
+
+  
+ })
+ 
+});
+   
     
 /*const array=["sid shirt","denim ","artist cardi"]
 searchBar=document.getElementById('search_bar');
@@ -319,5 +359,4 @@ if(!pattern.test(cvv_content)){
 }
 })
 */
-});
 
